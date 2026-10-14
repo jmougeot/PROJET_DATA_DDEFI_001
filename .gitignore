@@ -1,0 +1,14 @@
+# environnements et caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+# secrets : jamais dans un dépôt, même supprimés au commit suivant
+.env
+kaggle.json
+# données brutes : décrites et téléchargées par script, jamais versionnées
+data/raw/
+data/processed/
+# modèles entraînés : se régénèrent avec make reproduce
+models/*.pkl
+*.log
